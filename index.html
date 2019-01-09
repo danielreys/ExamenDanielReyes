@@ -10,18 +10,47 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-          </div>
-        </div>
+  <div class="container mt-4">
+    <div class="row">
+    <div class="col-12">
+    
+    </div>
+    </div>
+    <div id="game">
+    <h2 style="text-align:center;font-weight:bold;">Responde la pregunta <span id="npreg"></span></h2>
+     <div class="text-danger"><h2>Te quedan <span id="time">00:10</span> segundos!<h2></div>
+         <hr style="margin-bottom: 20px">
+    
+         <div class="card">
+      <div class="card-header">
+      <h5 class="card-title" style="font-weight:bold;" id="question"></h5> 
+      </div>
+      <div class="card-body">
+      <div class="row">
+      <div class="col-6">
+      <button type="button" style=" white-space: normal;" class="btn btn-primary btn-block" onclick="validar(this)" id="respuesta0"><span id="opcion0"></span></button>
+      </div>
+      <div class="col-6">
+      <button type="button" style=" white-space: normal;" class="btn btn-primary btn-block"onclick="validar(this)" id="respuesta1"><span id="opcion1"></span></button>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-6">
+      <button type="button" style=" white-space: normal;" class="btn btn-primary btn-block" onclick="validar(this)" id="respuesta2"><span id="opcion2"></span></button>
+      </div>
+      <div class="col-6">
+      <button type="button" style=" white-space: normal;" class="btn btn-primary btn-block" onclick="valdiar(this)" id="respuesta3"><span id="opcion3"></span></button>
+      </div>
+    </div>
+      </div>
+    </div>
+    
+    <hr style="margin-top: 20px">
+                <footer>
+               
+                </footer>
+    </div>
+    </div>
 </body>
+<script src="js/mi.js"></script>
 </html>
